@@ -44,11 +44,15 @@ a {
     border-radius: 999px;
     font-weight: 400;
     color: #fff;
+    border: 1px solid transparent;
     background: var(--secondary-color);
+    transition: 0.25s;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: #fff;
 }
 
 /* ====================Header====================================== */
@@ -189,4 +193,98 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* ====================Services====================================== */
+.services {
+    height: 100vh;
+    margin-top: 80px;
+    padding: 90px 0;
+}
+
+.services__heading {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.services__desc {
+    width: 468px;
+    margin: 18px auto;
+    color: #575f66;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
+}
+
+.services__row {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.services__content {
+    width: 470px;
+}
+
+.services__list {
+    margin-bottom: 55px;
+}
+
+.services__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 21px 61px 20px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.services__item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.services__item:hover .services__item__icon {
+    color: #fff;
+    background: var(--secondary-color);
+}
+
+.services__item__icon {
+    margin-right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+}
+
+.services__item__heading {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.services__item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-weight: 300;
+    line-height: 175%;
 }
