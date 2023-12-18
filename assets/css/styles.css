@@ -295,7 +295,7 @@ a {
     line-height: 175%;
 }
 
-/* ====================How it features====================================== */
+/* ====================Features====================================== */
 .features {
     margin: 85px 0;
     padding: 100px 0;
@@ -362,4 +362,60 @@ a {
 .features__item:hover a {
     font-weight: 400;
     color: var(--secondary-color);
+}
+
+/* ====================About====================================== */
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 85px 0;
+}
+
+.about__row {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
+    width: 49%;
+    padding: 0 58px 121px 0;
+}
+
+.about__img {
+    width: 512px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.about__img:last-child {
+    position: absolute;
+    width: 332px;
+    height: 370px;
+    bottom: 0;
+    right: 0;
+}
+
+.about__info {
+    margin-left: 130px;
+}
+
+.about__heading {
+    color: var(--primary-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+.about__desc {
+    margin: 18px 0 38px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 166.667%;
 }
